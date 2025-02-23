@@ -20,4 +20,4 @@ export default (await import("astro/config")).defineConfig({
 			sourcemap: true,
 		},
 	},
-});
+}) as defineConfig;
