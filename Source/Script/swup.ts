@@ -1,6 +1,5 @@
 import SwupBodyClassPlugin from "@swup/body-class-plugin";
 import SwupHeadPlugin from "@swup/head-plugin";
-
 import SwupOverlayTheme from "@swup/overlay-theme";
 import SwupPreloadPlugin from "@swup/preload-plugin";
 import SwupScrollPlugin from "@swup/scroll-plugin";
