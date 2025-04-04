@@ -1,20 +1,20 @@
 {
+	"$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
 		"baseUrl": "./",
-		"moduleResolution": "bundler",
-		"paths": {
-			"@Asset/*": ["Source/Asset/*"],
-			"@Component/*": ["Source/Component/*"],
-			"@Context/*": ["Source/Context/*"],
-			"@Element/*": ["Source/Element/*"],
-			"@Layout/*": ["Source/Layout/*"],
-			"@Library/*": ["Source/Library/*"],
-			"@Option/*": ["Source/Option/*"],
-			"@Page/*": ["Source/pages/*"],
-			"@Script/*": ["Source/Script/*"],
-			"@Style/*": ["Source/Style/*"]
-		},
+		"emitDeclarationOnly": false,
+		"moduleResolution": "Bundler",
+		"noEmit": true,
+		"outDir": "Target",
+		"plugins": [
+			{
+				"name": "@astrojs/ts-plugin"
+			}
+		],
+		"rootDir": ".",
 		"types": ["astro/client", "astro/env"]
 	},
-	"extends": "@playform/build/Target/Notation/TypeScript"
+	"exclude": ["Target"],
+	"extends": "@playform/build/tsconfig",
+	"include": ["Source", ".astro/types.d.ts"]
 }
