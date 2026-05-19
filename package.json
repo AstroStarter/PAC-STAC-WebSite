@@ -34,7 +34,7 @@
 		"@astrojs/check": "0.9.9",
 		"@astrojs/prefetch": "0.4.1",
 		"@astrojs/sitemap": "3.7.2",
-		"@astrojs/ts-plugin": "1.10.8",
+		"@astrojs/ts-plugin": "1.10.9",
 		"@playform/build": "0.3.2",
 		"@playform/compress": "0.2.3",
 		"@playform/format": "0.0.8",
